@@ -4,7 +4,7 @@ Feature: Revisions
     Given a WP install
 
     When I run `wp revisions list`
-    the return code should be 0
+    the return code should be: 0
 
     When I run `wp revisions generate`
     And I run `wp revisions list`
