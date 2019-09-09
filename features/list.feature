@@ -7,10 +7,10 @@ Feature: Revisions
     Then the return code should be 0
 
     When I run `wp revisions generate`
-    And I run `wp revisions list`
+    And I run `wp revisions list --format=count`
     Then STDOUT should contain:
       """
-      Success: 30 revisions.
+      45
       """
 
     When I run `wp revisions generate 12 --post_id=1`
