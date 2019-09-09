@@ -19,7 +19,6 @@ branches:
     - check_travis
 
 php:
-  - 5.3
   - 5.6
   - 7.1
   - 7.2
